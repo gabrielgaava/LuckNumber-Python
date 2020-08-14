@@ -1,0 +1,2 @@
+# LuckNumber-Python
+Studying Python
