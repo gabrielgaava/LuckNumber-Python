@@ -10,13 +10,15 @@ def Clear():
 
 # Mostra as opções possiveis no programa
 def Options():
-    print("\n====================================")
-    print("Escolha uma opção e pressione ENTER: ")
+    os.system(Clear())
+    print("\n=============== MENU ===============\n")
+    print("Escolha uma opção e pressione ENTER: \n")
     print("[1] - Criar jogo aleatorio (6 número) ")
     print("[2] - Numero aleatorio ")
     print("[3] - Reincidência de número ")
+    print("[4] - TOP 5 números ")
     print("[0] - Sair ")
-    print("====================================\n")
+    print("\n====================================\n")
     print("Sua escolha: ", end=' ')
     choosedOption = input()
     return int(choosedOption)
@@ -38,7 +40,10 @@ def RunFunction( choosedOption ):
         core.RandomNumber()
 
     elif choosedOption == 3:
-        core.ReadFile()
+        core.NumberRecurrence()
+
+    elif choosedOption == 4:
+        core.topFive()
 
     elif choosedOption == 0:
         exit()
