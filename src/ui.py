@@ -17,6 +17,7 @@ def Options():
     print("[2] - Numero aleatorio ")
     print("[3] - Reincidência de número ")
     print("[4] - TOP 5 números ")
+    print("[5] - Inserir novo jogo ")
     print("[0] - Sair ")
     print("\n====================================\n")
     print("Sua escolha: ", end=' ')
@@ -44,6 +45,9 @@ def RunFunction( choosedOption ):
 
     elif choosedOption == 4:
         core.topFive()
+
+    elif choosedOption == 5:
+        core.InsertNewGame()
 
     elif choosedOption == 0:
         exit()

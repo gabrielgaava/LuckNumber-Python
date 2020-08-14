@@ -6,6 +6,7 @@ import os
 import numpy as np
 from structure import Game
 
+# List the 5 most recurrent numbers
 def topFive():
 
     # Console
@@ -140,3 +141,40 @@ def RandomNumber():
         print("> Número sorteado: ", end=str(n)+"\n\n")
 
     ui.Continue()
+
+# Insert new game register in the csv
+def InsertNewGame():
+        print("============ CADASTRAR JOGO =============")
+        
+
+        # Collecting data
+        print("> Concurso:", end=" ")
+        gameId = input()
+
+        print("> Data:", end=" ")
+        date = input()
+                
+        print("> Bola 1:", end=" ")
+        b1 = input()
+
+        print("> Bola 2:", end=" ")
+        b2 = input()
+
+        print("> Bola 3:", end=" ")
+        b3 = input()
+
+        print("> Bola 4:", end=" ")
+        b4 = input()
+
+        print("> Bola 5:", end=" ")
+        b5 = input()
+
+        print("> Bola 6:", end=" ")
+        b6 = input()
+
+        with open('../assets/mega.csv','a') as csvFile:
+            csvFile.write("\n" + gameId + "," + date + "," + b1 + "," + b2 + "," + b3 + "," + b4 + "," + b5 + "," + b6)
+
+        print("\n\n> CADASTRO FEITO COM SUCESSO! ")
+
+        ui.Continue()
