@@ -175,6 +175,6 @@ def InsertNewGame():
         with open('../assets/mega.csv','a') as csvFile:
             csvFile.write("\n" + gameId + "," + date + "," + b1 + "," + b2 + "," + b3 + "," + b4 + "," + b5 + "," + b6)
 
-        print("\n\n> CADASTRO FEITO COM SUCESSO! ")
+        print("\n\n> CADASTRO FEITO COM SUCESSO!! ")
 
         ui.Continue()
