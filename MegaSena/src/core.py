@@ -10,14 +10,14 @@ from structure import Game
 def topFive():
 
     # Console
-    print("============ TOP 5 NÚMEROS =============")
+    print("============ TOP 10 NÚMEROS =============")
     print("- Lendo arquivo ... ")
 
     games = []
     recurrence = np.zeros((60,), dtype=int)
 
     # Read de file and store all games
-    with open('../assets/mega.csv', mode='r') as csvFile:
+    with open('../assets/lotofacil.csv', mode='r') as csvFile:
 
         csvReader = csv.DictReader(csvFile)
         lineCount = 0
